@@ -1,0 +1,46 @@
+/* Make the whole page a flex container in column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* remove default margin */
+  height: 100vh; /* full viewport height */
+}
+
+/* Header, main, and footer should span full width */
+header, main, footer {
+  width: 100%;
+}
+
+/* Main is a flex container in row layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* automatic height/width */
+}
+
+/* Article takes 2/3 of width, scrollable */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Aside takes 1/3 of width, scrollable */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Optional: style header/footer for clarity */
+header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+}
+
